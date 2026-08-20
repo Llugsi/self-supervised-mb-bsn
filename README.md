@@ -1,44 +1,46 @@
 # Self-Supervised Multi-Branch Blind-Spot Networks for Embedded Field Restoration
 
-Official repository for the paper: **"Self-Supervised Multi-Branch Blind-Spot Networks With Strict Lattice Continuity and Verified Hermeticity For Embedded Field Restoration"** (IEEE Compliant Format).
+Repositorio oficial para el modelo de redes Multi-Branch Blind-Spot Network (MB-BSN) orientado a la restauración espacial de campos hidrodinámicos en tiempo real.
 
 ---
 
-## 📌 Project Overview
-This repository delivers a mathematically hermetic Self-Supervised Multi-Branch Blind-Spot Network (MB-BSN) tailored for real-time spatial restoration of continuous hydrodynamic fields under severe sensor distortion. By hard-coding strict topological masking operators directly into parallel multi-scale convolutional streams, our framework achieves complete mathematical hermeticism against intra-channel data leakage.
-
-The execution ecosystem is specifically optimized to avoid random GPU thread drop stalls, running seamlessly on resource-constrained general-purpose edge CPUs (such as the mobile Intel Core i7-8665U architecture).
+## 📌 Resumen del Proyecto
+El marco implementa operadores topológicos de enmascaramiento para evitar fugas de datos y está optimizado para ejecutarse eficientemente en CPUs de borde con limitaciones de recursos.
 
 ---
 
-## ⚙️ Mathematical Metrics & Design Paradigm
-To align with embedded hardware limitations, the Coefficient of Determination ($R^2$) uses an online batch-wise aggregation paradigm rather than global post-epoch calculations, ensuring edge memory frugality and stochastic variance tracking.
+## 📊 Descarga de Datos y Referencia
+El conjunto de datos de velocidad de mecánica de fluidos (2D Navier-Stokes) se puede descargar manualmente desde el siguiente enlace:
+* **Dataset:** [Kaggle Repository](https://kaggle.com)
 
 ---
 
-## 📊 Dataset Availability & Reference Citation
-The evaluations utilize the 2D Navier-Stokes fluid mechanics velocity streams retrieved from the Kaggle Digital Repository:
-
-```latex
-\(\bibitem{ref_kaggle_dataset}\)
-W. Wang, ``Navier-Stokes 2D Fluid Mechanics Benchmark Dataset (N5000nse)\(,'' \textit{Kaggle Digital Repository}, 2023, Available online: \url{https://kaggle.com}. \%\%\)MAGIT_PARSER_PROTECT%%```
-
----
-
-## 📂 Repository Inventory
-The repository includes core files for execution and analysis:
-* `main_launcher.py`: Interactive command-line terminal interface controlling execution regimes.
-* `models.py`: Core multi-branch blind-spot model topology implementing element-wise Hadamard masking operators.
-* `dataset.py`: Fluid mechanics data loader featuring an automated continuous Navier-Stokes synthesis engine fallback.
-* `train_real.py`: Production training infrastructure utilizing genuine physics observation samples.
-* `train_synthetic.py`: Numerical optimization stream operating under controlled high-frequency noise profiles.
-* `run_ablation.py`: Parametric restriction engine executing selective feature suppression steps.
-* `compile_scientific_tables.py`: Analytical log processor to auto-generate ready-to-paste LaTeX tables.
-* `graphics.py`: Active visualization pipeline tracking model optimization trajectories.
+## 📂 Inventario del Repositorio
+* `main_launcher.py`: Interfaz de línea de comandos para controlar la ejecución.
+* `models.py` y `dataset.py`: Topología del modelo y cargador de datos.
+* `train_real.py` y `train_synthetic.py`: Canales de entrenamiento real y sintético.
+* `run_ablation.py` y `compile_scientific_tables.py`: Pruebas de ablación y compilador LaTeX.
 
 ---
 
-## 🚀 Execution & Deployment Guide
-Clone the repository and install requirements:
+## 🚀 Guía de Ejecución
+
+### 1. Instalación de Requisitos
+Clona el repositorio e instala las dependencias:
 ```bash
-git clone 
+git clone https://github.com
+cd self-supervised-mb-bsn
+pip install -r requirements.txt
+```
+
+### 2. Ejecución del Sistema
+Inicia el orquestador principal:
+```bash
+python main_launcher.py
+```
+Selecciona las opciones en la terminal para entrenar, ejecutar pruebas o compilar tablas.
+
+---
+
+## 📜 Licencia
+Licencia **MIT**.
