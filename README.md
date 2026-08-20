@@ -20,6 +20,7 @@ The 2D Navier-Stokes fluid mechanics velocity dataset can be downloaded manually
 * `models.py` and `dataset.py`: Core model topology and physical data loader components.
 * `train_real.py` and `train_synthetic.py`: Production training pipelines for real and synthetic domains.
 * `run_ablation.py` and `compile_scientific_tables.py`: Parametric ablation tests and automated LaTeX table compiler.
+* `graphics.py`: Allows to obtain the graphics of the architecture of the model included at the paper.
 
 ---
 
