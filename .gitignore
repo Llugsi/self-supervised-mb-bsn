@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data containers (Archivos pesados de datos físicos)
+*.mat
+*.hdf5
+*.h5
+
+# Experimental Output Logs (CSV generados por entrenamiento)
+*.csv
+
+# Generated Scientific Figures (Figuras PNG de Matplotlib)
+*.png
+
+# Environments & IDEs
+.ipynb_checkpoints/
+.venv/
+venv/
+ENV/
+.vscode/
+.idea/
