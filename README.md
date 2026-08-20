@@ -1,46 +1,46 @@
 # Self-Supervised Multi-Branch Blind-Spot Networks for Embedded Field Restoration
 
-Repositorio oficial para el modelo de redes Multi-Branch Blind-Spot Network (MB-BSN) orientado a la restauración espacial de campos hidrodinámicos en tiempo real.
+Official repository for the Multi-Branch Blind-Spot Network (MB-BSN) framework tailored for real-time spatial restoration of hydrodynamic fields.
 
 ---
 
-## 📌 Resumen del Proyecto
-El marco implementa operadores topológicos de enmascaramiento para evitar fugas de datos y está optimizado para ejecutarse eficientemente en CPUs de borde con limitaciones de recursos.
+## 📌 Project Overview
+The framework implements structured topological masking operators to prevent data leakage and is fully optimized to run efficiently on resource-constrained embedded edge CPUs.
 
 ---
 
-## 📊 Descarga de Datos y Referencia
-El conjunto de datos de velocidad de mecánica de fluidos (2D Navier-Stokes) se puede descargar manualmente desde el siguiente enlace:
+## 📊 Dataset Availability & Reference
+The 2D Navier-Stokes fluid mechanics velocity dataset can be downloaded manually from the following link:
 * **Dataset:** [Kaggle Repository](https://www.kaggle.com/datasets/wenwangou/n5000nse?resource=download)
 
 ---
 
-## 📂 Inventario del Repositorio
-* `main_launcher.py`: Interfaz de línea de comandos para controlar la ejecución.
-* `models.py` y `dataset.py`: Topología del modelo y cargador de datos.
-* `train_real.py` y `train_synthetic.py`: Canales de entrenamiento real y sintético.
-* `run_ablation.py` y `compile_scientific_tables.py`: Pruebas de ablación y compilador LaTeX.
+## 📂 Repository Inventory
+* `main_launcher.py`: Command-line terminal interface controlling execution regimes.
+* `models.py` and `dataset.py`: Core model topology and physical data loader components.
+* `train_real.py` and `train_synthetic.py`: Production training pipelines for real and synthetic domains.
+* `run_ablation.py` and `compile_scientific_tables.py`: Parametric ablation tests and automated LaTeX table compiler.
 
 ---
 
-## 🚀 Guía de Ejecución
+## 🚀 Execution Guide
 
-### 1. Instalación de Requisitos
-Clona el repositorio e instala las dependencias:
+### 1. Environment Setup & Cloning
+Clone the repository and install the standard dependency stack:
 ```bash
 git clone https://github.com/Llugsi/
 cd self-supervised-mb-bsn
 pip install -r requirements.txt
 ```
 
-### 2. Ejecución del Sistema
-Inicia el orquestador principal:
+### 2. Launching the System Control Panel
+Initiate the main central orchestrator:
 ```bash
 python main_launcher.py
 ```
-Selecciona las opciones en la terminal para entrenar, ejecutar pruebas o compilar tablas.
+Select the respective terminal options to execute model training, perform ablation studies, or compile raw LaTeX tables.
 
 ---
 
-## 📜 Licencia
-Licencia **MIT**.
+## 📜 License
+Distributed under the terms of the open-source **MIT License**.
