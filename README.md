@@ -1,4 +1,4 @@
-# Guardar este archivo como generar_readme.py y ejecutarlo con: python generar_readme.py
+## Guardar este archivo como generar_readme.py y ejecutarlo con: python generar_readme.py
 import os
 
 content = """# Self-Supervised Multi-Branch Blind-Spot Networks for Embedded Field Restoration
