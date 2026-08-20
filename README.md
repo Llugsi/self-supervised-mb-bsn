@@ -11,7 +11,7 @@ El marco implementa operadores topológicos de enmascaramiento para evitar fugas
 
 ## 📊 Descarga de Datos y Referencia
 El conjunto de datos de velocidad de mecánica de fluidos (2D Navier-Stokes) se puede descargar manualmente desde el siguiente enlace:
-* **Dataset:** [Kaggle Repository](https://kaggle.com)
+* **Dataset:** [Kaggle Repository](https://www.kaggle.com/datasets/wenwangou/n5000nse?resource=download)
 
 ---
 
@@ -28,7 +28,7 @@ El conjunto de datos de velocidad de mecánica de fluidos (2D Navier-Stokes) se 
 ### 1. Instalación de Requisitos
 Clona el repositorio e instala las dependencias:
 ```bash
-git clone https://github.com
+git clone https://github.com/Llugsi/
 cd self-supervised-mb-bsn
 pip install -r requirements.txt
 ```
