@@ -88,6 +88,32 @@ Select ablation configuration target [1-4]:
 1. **Mathematical Hermeticism Verified:** The empirical sensitivity check evaluates the network's output pixel gradient with respect to its own input central cell at coordinate `(y=7, x=7)`. The proposed network scored an absolute gradient value of exactly **`0.0`**, proving complete receptive field isolation, whereas standard baselines leak information (`-0.00628`).
 2. **Granular Feature Suppression Control:** The sub-ablation routing layer decouples processing kernels cleanly (Experiments I, II, and III). This architecture allows rigorous verification of how asymmetric spatial dilation depths contribute to boundary layer noise dampening.
 
+---
+
+## 📑 Citation & Academic Reference
+
+If you find this framework, multi-branch architecture, or the embedded boundary distortion mechanics useful in your research, please cite this work using the following academic formats:
+
+### IEEE / Plain Text Format
+```text
+R. Llugsi, "Self-Supervised Multi-Branch Blind-Spot Networks With Strict Lattice Continuity and Verified Hermeticity For Embedded Field Restoration," IEEE Transactions on Neural Networks and Learning Systems (TNNLS), vol. XX, no. X, pp. XXX-XXX, 2026.
+```
+
+### BibTeX Format (`.bib`)
+For users compiling their manuscripts via LaTeX/Overleaf, you can append the following entry directly into your references database:
+
+```bibtex
+@article{llugsi2026self,
+  author={Llugsi, Ricardo},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={Self-Supervised Multi-Branch Blind-Spot Networks With Strict Lattice Continuity and Verified Hermeticity For Embedded Field Restoration}, 
+  year={2026},
+  volume={PP},
+  number={xx},
+  pages={xx-xx},
+  doi={10.1109/TNNLS.2026.XXXXXXX}
+}
+```
 
 
 ## 📜 License
